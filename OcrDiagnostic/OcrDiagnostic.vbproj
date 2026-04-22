@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0F32457-1622-4FBE-94AC-AE25A5A54114}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OcrDiagnostic</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccAuxPath>SAK</SccAuxPath>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/OcrDiagnostic/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OcrDiagnostic.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OcrDiagnostic.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atalasoft.dotImage">
+      <Name>Atalasoft.dotImage</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.AdvancedDocClean">
+      <Name>Atalasoft.dotImage.AdvancedDocClean</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.AdvancedDocClean.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Dicom">
+      <Name>Atalasoft.dotImage.Dicom</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Dwg">
+      <Name>Atalasoft.dotImage.Dwg</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Dwg.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Heif">
+      <Name>Atalasoft.dotImage.Heif</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Heif.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Jbig2">
+      <Name>Atalasoft.dotImage.Jbig2</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Jbig2.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Jpeg2000">
+      <Name>Atalasoft.dotImage.Jpeg2000</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Jpeg2000.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Lib">
+      <Name>Atalasoft.dotImage.Lib</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Ocr">
+      <Name>Atalasoft.dotImage.Ocr</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Ocr.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Ocr.GlyphReader">
+      <Name>Atalasoft.dotImage.Ocr.GlyphReader</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Ocr.GlyphReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Ocr.OmniPage">
+      <Name>Atalasoft.dotImage.Ocr.OmniPage</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Ocr.OmniPage.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Ocr.Tesseract5">
+      <Name>Atalasoft.dotImage.Ocr.Tesseract5</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Ocr.Tesseract5.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Pdf">
+      <Name>Atalasoft.dotImage.Pdf</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.PdfDoc.Bridge">
+      <Name>Atalasoft.dotImage.PdfDoc.Bridge</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.PdfDoc.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.PdfReader">
+      <Name>Atalasoft.dotImage.PdfReader</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.PdfReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.Raw">
+      <Name>Atalasoft.dotImage.Raw</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Raw.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.dotImage.WinControls">
+      <Name>Atalasoft.dotImage.WinControls</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.PdfDoc">
+      <Name>Atalasoft.PdfDoc</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.PdfDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.Shared">
+      <Name>Atalasoft.Shared</Name>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OcrDiagnostic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResolutionFontBuilder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="OcrDiagnostic.resx">
+      <DependentUpon>OcrDiagnostic.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameters.resx">
+      <DependentUpon>Parameters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qmarkdown.ico" />
+    <EmbeddedResource Include="qmarkup.ico" />
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinDemoHelperMethods\WinDemoHelperMethods.vbproj">
+      <Project>{35b8cd0b-0253-4c5b-b5ca-6f0ac4e2dccc}</Project>
+      <Name>WinDemoHelperMethods</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
